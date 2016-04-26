@@ -1,0 +1,11 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "python.pythonPath": "\"E:/Projetos/Python/3 - Django/Scripts/python\"",
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Path": "\"E:/Projetos/Python/3 - Django/Scripts/autopep8.exe\"",
+    "python.linting.lintOnSave": false,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Path": "\"E:/Projetos/Python/3 - Django/Scripts/pep8.exe\"",
+    "editor.formatOnType": true
+}
