@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+Novo convite
+{% endblock title %}
+
+{% block content %}
+    <div class="well col-sm-12">
+        <p>Por favor, escolha o usuário que você quer convidar</p>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary">Enviar convite</button>
+        </form>
+    </div>
+{% endblock content %}

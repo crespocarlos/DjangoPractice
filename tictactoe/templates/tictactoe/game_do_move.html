@@ -1,0 +1,25 @@
+{% extends "tictactoe/game_detail.html" %}
+{% load staticfiles %}
+
+{% load crispy_forms_tags %}
+
+{% block styling %}
+    {{ block.super }}
+    <style type="text/css">
+        .tictactoe-cell.empty:hover {
+                background-color: #48CA3B;
+                cursor: pointer;
+        }
+
+    </style>
+{% endblock styling %}
+
+{% block moveform %}
+        {{ block.super }}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+            
+        <button type="submit" class="btn btn-primary" >Submit!</button>
+    </form>
+{% endblock moveform %}

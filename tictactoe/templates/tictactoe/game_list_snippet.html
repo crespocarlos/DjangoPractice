@@ -2,10 +2,10 @@
 
 <div class="list-group" >
     {% for game in games_list %}
-        <a class="list-group-item" href="#">
+        <a class="list-group-item" href="{% url 'tictactoe_game_detail' pk=game.id%}">
             {{ game }}:
             {% if game.status == "A" %}
-                {% if game.next_to_move == user %}Your turn{% else %}Waiting for opponents move{% endif %}
+                {% if game.next_to_move == user %}Your turn{% else %}Esperando a jogada do oponente{% endif %}
             {% elif game.status == "D" %}
                 Empate
             {% elif game.status == "F" and user == game.first_player %}
@@ -17,6 +17,6 @@
             {% endif %}
             <span class="badge">{{ game.move_set.count }}</span></a>
     {% empty %}
-        <span class="list-group-item">No games available.</span>
+        <span class="list-group-item">Não há jogos</span>
     {% endfor %}
 </div>

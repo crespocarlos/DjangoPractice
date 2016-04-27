@@ -38,13 +38,13 @@
             </div>
 
             <ul class="nav navbar-nav">
-                <li><a href="#">New Game</a></li>
+                <li><a href="{% url 'tictactoe_invite' %}">Novo Jogo</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
 
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
                 {% if user.is_authenticated %}
                     <li><a href="{% url 'boardgames_logout' %}">Logout</a></li>
                 {% else %}
