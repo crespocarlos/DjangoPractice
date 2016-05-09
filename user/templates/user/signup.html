@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+Novo usuário
+{% endblock title %}
+
+{% block content %}
+<div class="well col-sm-6">
+    <fieldset>
+        <legend>
+            Criar nova conta
+        </legend>
+        <div class="panel-body">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <p><input type="submit" value="Vai!" class="btn btn-success"></p>
+            </form>
+        </div>
+    </fieldset>
+</div>
+{% endblock content%}
