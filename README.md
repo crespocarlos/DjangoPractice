@@ -1,5 +1,5 @@
 # tictactoe-game-django
-A tic tac toe game in python and django. 
+A tic tac toe game in python, django and angularJS
 
 # Course
 It was done in order to learn some things of the django concepts and python. Check the course out below
@@ -7,4 +7,4 @@ It was done in order to learn some things of the django concepts and python. Che
 https://app.pluralsight.com/library/courses/django-fundamentals
 
 # Techonogies
-Python, Django, Twitter Bootstrap, SQLite
+Python, Django, Twitter Bootstrap, SQLite, AngularJS
